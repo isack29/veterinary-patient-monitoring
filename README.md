@@ -29,4 +29,4 @@ Una aplicación para el control y gestión de pacientes en una clínica veterina
 1. Clona este repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/nombre-del-repo.git
+git clone https://github.com/isack29/veterinary-patient-monitoring.git
