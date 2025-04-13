@@ -1,54 +1,32 @@
-# React + TypeScript + Vite
+# 🐾 Aplicación de Seguimiento de Pacientes Veterinarios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación para el control y gestión de pacientes en una clínica veterinaria. Desarrollada con **React** y **TypeScript**, utilizando `Zustand` para el manejo del estado, `uuid` para generación de identificadores únicos, `react-hook-form` para formularios y `localStorage` para persistencia de datos.
 
-Currently, two official plugins are available:
+## 🩺 Funcionalidades principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🐶 **Crear** nuevos pacientes
+- ✏️ **Editar** información de pacientes existentes
+- ❌ **Eliminar** pacientes del sistema
+- 💾 Persistencia automática en `localStorage` gracias a `zustand/persist`
 
-## Expanding the ESLint configuration
+## ⚙️ Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Zustand (con `persist`)
+- uuid
+- react-hook-form
+- localStorage (para guardar datos de forma permanente en el navegador)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Demo
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+[🔗 https://clinquant-crepe-d9b1b9.netlify.app/ ](#)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<!-- Reemplaza "#" con el link real cuando la app esté en producción -->
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📦 Instalación local
+
+1. Clona este repositorio:
+
+```bash
+git clone https://github.com/tu-usuario/nombre-del-repo.git
